@@ -1,9 +1,8 @@
-dna = "ATGCGTACGTTAG"
+dna = "ATGCCGTA"
 
-g = dna.count("G")
-c = dna.count("C")
+complement = dna.replace("A","t").replace("T","a").replace("G","c").replace("C","g").upper()
 
-gc_content = (g + c) / len(dna) * 100
+reverse_complement = complement[::-1]
 
 print("DNA Sequence:", dna)
-print("GC Content:", gc_content)
+print("Reverse Complement:", reverse_complement)
