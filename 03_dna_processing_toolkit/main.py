@@ -28,11 +28,11 @@ def main():
     rev_comp = reverse_complement(dna)
     rna = transcribe(rev_comp)
 
-    print("\n--- Results ---")
+    print("\n=== Results ===")
     print("Original DNA:        ", dna)
     print("Reverse Complement:  ", rev_comp)
     print("Transcribed RNA:     ", rna)
 
 
 if __name__ == "__main__":
-    main()
+    main() 
